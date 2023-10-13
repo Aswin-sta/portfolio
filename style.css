@@ -135,50 +135,7 @@ nav #menu li a:hover {
 /*---------------------------------------------------*/
 
 
-@media (max-width:660px ) {
-      
-      nav .primary-header {
-            width: 100%;
-            height: 100%;
-            background:#0f0f0f;
-            z-index: 1;
-            padding: 0%;
-      }
 
-
-      nav #menu {
-      inset :0% 0% 0% 20%;
-      flex-direction: column;
-      position:fixed;
-      width:100%;
-      background-color: #aba3a3;
-      padding-block:10%;
-      margin-bottom: 0%;
-       transform: translateX(100%); 
-       transition: transform 350 ms ease-out;
-      }
-
-      nav #menu[data-visible="true"]{
-            transform: translateX(0%);
-          
-      }
-
-
-      .mobile-nav-toggle{
-            display: block;
-            position: absolute;
-            z-index:9999;
-            background: url("hamburger-menu.svg");
-            background-repeat: no-repeat;
-            width: 2rem;
-            aspect-ratio: 1;
-            top: 2rem;
-            right: 3rem;
-            border: 0;
-      }
-
-
- }
 
 .scroll-down {
       position: absolute;
@@ -216,7 +173,7 @@ nav #menu li a:hover {
 .one-line{
       padding: 20%;
       text-align: center;
-      font-size: larger;
+      font-size: 30px;
 }
 
 .work{
@@ -287,7 +244,7 @@ margin: 5%;
 
 
 .contact .social-media li {
-    margin-left: 40px;
+     margin-left: 40px;
       font-weight: 300;
       line-height: 80px;
 
@@ -306,7 +263,7 @@ margin: 5%;
   }
 
   .about-container{
-      display: block;
+            display: block;
             width: 100%;
             height: auto;
             padding:15%;
@@ -326,3 +283,179 @@ margin: 5%;
 
      color: blue;
   }
+/* <-----------------------------------------> */
+
+@media (max-width:660px ) {
+      
+      nav .primary-header {
+            width: 100%;
+            height: 100%;
+            background:#0f0f0f;
+            z-index: 1;
+            padding: 0%;
+      }
+
+
+      nav #menu {
+      inset :0% 0% 0% 20%;
+      flex-direction: column;
+      position:fixed;
+      width:100%;
+      background-color: #aba3a3;
+      padding-block:10%;
+      margin-bottom: 0%;
+      justify-content: center;
+       transform: translateX(100%); 
+       transition: transform 350 ms ease-out;
+      }
+
+      nav #menu[data-visible="true"]{
+            transform: translateX(0%);
+          
+      }
+
+
+      .mobile-nav-toggle{
+            display: block;
+            position: absolute;
+            z-index:9999;
+            background: url("hamburger-menu.svg");
+            background-repeat: no-repeat;
+            width: 2rem;
+            aspect-ratio: 1;
+            top: 2rem;
+            right: 3rem;
+            border: 0;
+      }
+
+
+      .line {
+            width: 24em;
+            top: 50%;
+            margin: auto;
+            font-size: 20px;
+            border-right: .1px solid rgba(255, 255, 255, 0.75);
+            text-align: center;
+            white-space: nowrap;
+            overflow: hidden;
+      }
+      
+
+      .one-line{
+            padding: 20%;
+           font-size: 2em;
+            font-size: smaller;
+            text-align: center;
+            justify-content: center;
+      
+      }
+      
+
+      .work{
+            margin:1%;
+            display:block;
+      
+        }
+        
+        .work div{
+      margin: 0%;
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: #aba3a3;
+      background-size: cover;
+           
+        }
+      
+        
+        .work div h4{
+        left:80px;
+        color: #0f0f0f;
+        text-align: left;
+        padding:10%;
+        }
+      
+        .work div p{
+      
+            display: block;
+            text-align: justify;
+            color: #0f0f0f;
+            padding:10%;
+                 
+              }
+
+              .contact{
+                  display: flex;
+                  justify-content: space-between;
+                  bottom:5%;
+            
+              }
+
+              .contact .social-media{
+                  right:10%;
+              }
+
+              .contact .social-media li {
+                 justify-content: space-between;
+                 margin:.5em;
+                 list-style: none;
+
+              
+              }
+      
+
+              .social-media li:nth-child(1) a::before {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  display: inline-block;
+                  margin-right: 5px;
+                  background-image: url('linkedin logo.svg');
+              }
+              
+              .social-media li:nth-child(2) a::before {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  display: inline-block;
+                  margin-right: 5px;
+                  background-image: url('instagram logo.svg');
+              }
+              
+              .social-media li:nth-child(3) a::before {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  display: inline-block;
+                  margin-right: 5px;
+                  background-image: url('whatsapp logo.svg');
+              }
+              
+              .social-media li:nth-child(4) a::before {
+                  content: "";
+                  width: 20px;
+                  height: 20px;
+                  display: inline-block;
+                  margin-right: 5px;
+                  background-size: cover;
+                  background-image: url('github.svg');
+              }
+              .social-media li span{
+                  display: none;
+              }
+              
+
+              .contact .email{
+                  left:5%;
+                  content: "";
+                  background-size: cover;
+                  background-image: url('mail.svg');
+                  width: 30px;
+                  margin-top: 30px;
+                  height: 30px;
+            }
+
+            .contact .email span{
+             display: none;
+            }
+ }
