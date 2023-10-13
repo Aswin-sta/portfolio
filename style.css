@@ -117,45 +117,6 @@ nav #menu li a:hover {
 
 
 
- @media (max-width:660px ) {
-      
-      nav {
-            width: 100%;
-            height: 100%;
-            background: #0f0f0f;
-            z-index: 1;
-            padding: 0%;
-      }
-
-
-      nav #menu {
-      inset :0% 0% 0% 20%;
-      flex-direction: column;
-      position:fixed;
-      width:100%;
-      padding-block: 15%;
-      background-color: #aba3a3;
-      margin-bottom: 0%;
-      }
-
-
-      .mobile-nav-toggle{
-            position: fixed;
-            display: block;
-            z-index:9999;
-            background: url("hamburger-menu.svg");
-            background-repeat: no-repeat;
-            width: 2rem;
-            aspect-ratio: 1;
-            top: 2rem;
-            right: 2rem;
-            border: 0;
-      }
-
-
- }
-
-
 /*--------------- hero section --------------- */
 .hero {
       height: 100vh;
@@ -172,6 +133,52 @@ nav #menu li a:hover {
 }
 
 /*---------------------------------------------------*/
+
+
+@media (max-width:660px ) {
+      
+      nav .primary-header {
+            width: 100%;
+            height: 100%;
+            background:#0f0f0f;
+            z-index: 1;
+            padding: 0%;
+      }
+
+
+      nav #menu {
+      inset :0% 0% 0% 20%;
+      flex-direction: column;
+      position:fixed;
+      width:100%;
+      background-color: #aba3a3;
+      padding-block:10%;
+      margin-bottom: 0%;
+       transform: translateX(100%); 
+       transition: transform 350 ms ease-out;
+      }
+
+      nav #menu[data-visible="true"]{
+            transform: translateX(0%);
+          
+      }
+
+
+      .mobile-nav-toggle{
+            display: block;
+            position: absolute;
+            z-index:9999;
+            background: url("hamburger-menu.svg");
+            background-repeat: no-repeat;
+            width: 2rem;
+            aspect-ratio: 1;
+            top: 2rem;
+            right: 3rem;
+            border: 0;
+      }
+
+
+ }
 
 .scroll-down {
       position: absolute;
