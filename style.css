@@ -214,7 +214,7 @@ margin: 5%;
  
   
 
-.contact{
+.social-media-nav{
   
       display: inline-flex;
       border-top:1px solid #fff;
@@ -222,20 +222,20 @@ margin: 5%;
 
 }
 
-.contact .email{
+.social-media-nav #email{
       position: relative;
       left:80px;
       line-height: 80px;
 }
 
-.contact .email a{
+.social-media-nav #email a{
       color: #aba3a3;
 }
 
 
 
 
-.contact .social-media{
+.social-media-nav .social-media{
       float: right;
       right: 80px;
       position: absolute;
@@ -243,20 +243,20 @@ margin: 5%;
 }
 
 
-.contact .social-media li {
+.social-media-nav .social-media li {
      margin-left: 40px;
       font-weight: 300;
       line-height: 80px;
 
 }
 
-.contact .social-media li  a {
+.social-media-nav .social-media li  a {
      color: #aba3a3;
 
   }
 
 
-  .contact .social-media li  a:hover{
+  .social-media-nav .social-media li  a:hover{
       color : #fff;
       text-decoration:none
 
@@ -384,18 +384,18 @@ margin: 5%;
                  
               }
 
-              .contact{
+              .social-media-nav{
                   display: flex;
                   justify-content: space-between;
-                  bottom:5%;
+                  bottom:0;
             
               }
 
-              .contact .social-media{
+              .social-media-nav .social-media{
                   right:10%;
               }
 
-              .contact .social-media li {
+              .social-media-nav .social-media li {
                  justify-content: space-between;
                  margin:.5em;
                  list-style: none;
@@ -437,25 +437,58 @@ margin: 5%;
               }
               
 
-              .contact #email {
-                  left:5%;
-                  width: 30px;
-                  margin-top: 30px;
-                  height: 30px;
+              .social-media-nav #email {
+                  left:10%;
+                  display: block;
+                  justify-content: center;
+                  align-items: center;
+                  margin:.5em;
             }
 
-            .contact #email a::before{
+            .social-media-nav #email a::before{
                   content: "";
-                  width: 30px;
-                  height: 30px;
-                  display: inline-block;
+                  width: 25px;
+                  height: 25px;
+                  display:inline-block;
                   margin-right: 5px;
-                  background-size: cover;
+                  background-size: contain;
                   background-image: url('mail.svg');
            
             }
 
-            .contact #email span{
+            .social-media-nav #email span{
               display: none; 
             }
+
+
+            .about-container{
+                  display: block;
+                  width: 100%;
+                  align-items: center;
+            
+        }
+
+
+                  .about-container h1 {
+
+                        inset:10% 0 0 0 ;
+                        margin-top: 20%;
+                        margin-bottom:10%;
+                  
+                  }
+      
+      
+            .about-container p {
+            
+                  display: block;
+                  text-align: justify;
+                  padding-top: 5%;
+                  margin: 5%;
+                  font-size: small;
+            }
+      
+                  .about-container span {
+                  
+                  color: blue;
+                  }
  }
